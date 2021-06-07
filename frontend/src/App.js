@@ -1,35 +1,20 @@
 import React from 'react'
-import { BrowserRouter as Router, Link } from "react-router-dom"
-import styled from 'styled-components';
-import UserList from './user/UserList';
-
-
-
+import { Route } from "react-router-dom"
+import { counter } from 'counter/index'
+import { Login, SignUp, UserDetail, UserEdit, UserList} from 'user/index'
+import { Home } from 'common/index'
 
 
 const App = () => {
-  return (<Container>
-  <Element>
-  <nav>
-    <Router>
-      <Link to="/">Home</Link><br/>
-      <Link to="/">Blog</Link><br/>
-      <Link to="/">About Me</Link><br/>
-      <Link to="">Go to Google</Link><br/>
-    </Router>
-  </nav>
-  {/* <Counter/> */}
-  
- </Element>
-  </Container>)
+  return (<div>
+    <Route exact path='/common' component={Home}/>
+    <Route exact path='/counter' component={counter}/>
+    <Route exact path='/user-list' component={UserList}/>
+    <Route exact path='/login' component={Login}/>
+    <Route exact path='/signup' component={SignUp}/>
+    <Route exact path='/user-detail' component={UserDetail}/>
+    <Route exact path='/user-edit' component={UserEdit}/>
+  </div>)
 }
-const Container = styled.div`
-    width: 100%;
-    border: 1px solid #d1d8e4;
-`
-const Element = styled.div`
-  width: 400px;  
-  margin: 0 auto;
-   
-`
+
 export default App
