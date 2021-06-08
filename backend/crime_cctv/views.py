@@ -17,7 +17,7 @@ class CrimeApi(object):
                 break
             elif menu == '1':
                 dto.dframe = util.new_models('cctv_in_seoul.csv')
-                util.new_models(dto.dframe)
+                util.print_dframe(dto.dframe)
             elif menu == '2':
                 pass
             else:
