@@ -1,3 +1,5 @@
+#상속 클래스 연습
+
 class Country(object):
     name = 'Country Name'
     population = 'Population'
