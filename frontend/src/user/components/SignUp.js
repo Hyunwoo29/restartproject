@@ -19,7 +19,7 @@ const SignUp = () => {
     <input type="password" placeholder="Repeat Password" name="psw-repeat" required/>
     
     <label>
-      <input type="checkbox" checked="checked" name="remember" style={{marginbottom:"15px"}}/> Remember me
+      <input type="checkbox" checked="checked" name="remember" style={{marginBottom:"15px"}}/> Remember me
     </label>
     
     <p>By creating an account you agree to our <a href="#" style={{color:"dodgerblue"}}>Terms & Privacy</a>.</p>
@@ -30,7 +30,7 @@ const SignUp = () => {
     </div>
   </div>
 </form>
-    </>)
+</>)
 }
 
 export default SignUp
